@@ -1,5 +1,4 @@
 version: '3.8'
-
 services:
   jenkins:
     image: jenkins/jenkins:lts
@@ -8,7 +7,7 @@ services:
       - "8080:8080"
       - "50000:50000"
     volumes:
-      - C:\Users\21268\Desktop\jenkins:/var/jenkins_home
+      - D:/docker/jenkins:/var/jenkins_home
     restart: unless-stopped
     user: root
     environment:
