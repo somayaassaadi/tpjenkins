@@ -5,7 +5,7 @@ pipeline {
         stage('Checkout code') {
             agent any
             steps {
-                git branch: 'source', url:'https://github.com/bart120/m2-cicd.git' //plugin git
+                git branch: 'source', url:'https://github.com/somayaassaadi/tpjenkins.git' //plugin git
                 sh 'ls -R ${WORKSPACE}'
                 stash name: 'cource-code', includes :'**'
             }
